@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/touchRelative">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTimer"
+        android:text="5"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewScore"
+        android:text="0"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="355dp"
+        android:layout_marginLeft="355dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textBest"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Best Score:"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textBest"
+        android:id="@+id/textViewHighScore"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="0"
+        android:textSize="40sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startBtn"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textViewHighScore"
+        android:layout_centerHorizontal="true"
+        android:text="Start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textYourScore"
+        android:textColor="#fff"
+        android:layout_below="@+id/startBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Your Score:"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textYour"
+        android:layout_below="@id/textYourScore"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
